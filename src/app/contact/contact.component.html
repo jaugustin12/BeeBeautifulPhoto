@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="jumbotron">
+    <form *ngIf="success == null && loading == false" [formGroup]="emailForm" [hidden]="success" (ngSubmit)="submitHandler()">
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" name="email">
+
+        <mat-error *ngIf="email.invalid && email.touched">
+          You must enter a valid email
+        </mat-error>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+          <mat-label>Package</mat-label>
+          <mat-select formControlName="package" name="package">
+            <mat-option value=""></mat-option>
+            <mat-option value="1">1</mat-option>
+            <mat-option value="2">2</mat-option>
+            <mat-option value="3">3</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <br>
+      <mat-form-field>
+        <mat-label>Message</mat-label>
+        <textarea matInput
+        cdkTextareaAutosize
+        cdkAutosizeMinRows="3"
+         matInput placeholder="message" formControlName="message" name="message"></textarea>
+
+        <mat-hint align="end">
+          Message must be at least 20 characters
+        </mat-hint>
+
+        <mat-error *ngIf="message.invalid && message.touched">
+          You must enter a valid message
+        </mat-error>
+      </mat-form-field>
+
+      <div *ngIf="loading">
+      <hr>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </div>
+<hr>
+      <button mat-raised-button [disabled]="emailForm.invalid" color="primary">Submit message</button>
+
+    </form>
+
+    <div *ngIf="success" class="jumbotron">
+        <div class="card logo">
+            <div class="card-body">
+              <img src="../assets/bee's-photos/bbp-logo.small.jpeg" id="logo">
+            </div>
+          </div>
+          <hr>
+      <h1>
+        Thank you
+      </h1>
+      <h2>
+          We have recieved your submission.
+      </h2>
+    </div>
+
+    <div *ngIf="success == false" class="jumbotron">
+    <h1 style="color: red">
+      Error
+    </h1>
+    <h2>
+      {{serverErrorMessages}}
+    </h2>
+    <button type="button" class="btn btn-dark float-right" (click)="tryAgain()">Try again</button>
+  </div>
+  </div>
+</div>

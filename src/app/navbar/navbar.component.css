@@ -1,0 +1,99 @@
+.logo{
+  margin: 0 auto;
+  background-color: rgba(255, 228, 196, 0.49);
+  font-family: cursive;
+  width: 18vw;
+  border-style: outset;
+  border-width: 13px;
+}
+#navMove{
+  width: 100vw;
+}
+
+@media only screen and (min-width: 990px) {
+  nav ul li{
+    font-size: 3vh;
+  }
+
+  nav {
+    background-color: rgba(255, 228, 196, 0.771);
+    padding: 10px;
+    box-shadow: 30px 15px rgba(0, 0, 0, 0.107);
+    height: 26vh;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+
+  #menuButton{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+
+  nav ul li{
+    font-size: 3.5vh;
+  }
+  #navMove{
+    background-color: rgba(255, 228, 196, 0.771);
+    padding: 10px;
+    box-shadow: 30px 15px rgba(0, 0, 0, 0.107);
+    height: 60vh;
+    position: fixed;
+    z-index: 5;
+    top: -60vh;
+    height: 60vh;
+  }
+
+  #navMove.show {
+    transition: all .5s;
+    top: 0vh;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  nav ul li{
+    font-size: 5vh;
+  }
+
+}
+
+
+.table{
+  display: table;   /* Allow the centering to work */
+  margin: 0 auto;
+  width: 70vw;
+}
+
+nav ul {
+  list-style-type: none;
+  min-width: 100%;
+}
+
+nav ul li{
+  color: #000;
+  display: inline;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-width: 27%;
+}
+
+#logo{
+  width: 100%;
+  height: 100%;
+}
+
+#menuButton{
+  display: block;
+  position: fixed;
+  top: 10vh;
+  z-index: 50;
+}
+
+
+.navbar-toggler {
+  border-color: rgb(0, 0, 0);
+  border-width: 2px;
+}

@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+/* body {
+  height: 100%;
+  margin: 0%;
+  background: url('./assets/bbPhoto01.background.svg') no-repeat;
+  background-size: cover;
+} */
+html {
+  background: url('./assets/bbPhoto01.background.svg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 3vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.card-body{
+  padding: 1vh;
+}
+.container{
+  position: absolute;
+  min-width: 98vw;
+}
+@media only screen and (max-width: 990px) {
+  .container{
+    margin: 0vh 1vw;
+}
+}
+
+@media only screen and (min-width: 990px) {
+  .container{
+    margin: 30vh 1vw;
+}
+}
+
+.self-portrait{
+  background-color: rgba(255, 228, 196, 0.49);
+  padding: 2%;
+}
+.card{
+  max-height: 65vh;
+  overflow-y: scroll;
+}
+
+.jumbotron{
+  opacity: 0.6;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+html, body { }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,36 @@
+
+@media screen and (max-width: 990px) {
+  .container{
+    top: 15vh;
+  }
+}
+
+mat-form-field{
+  width: 30vw;
+}
+mat-hint, mat-error{
+  font-size: 2vh;
+}
+br{
+  line-height: 15vh;;
+}
+
+input, mat-label, mat-select, textarea {
+  font-size: 3vh;
+}
+.jumbotron{
+  opacity: 0.8;
+}
+
+.logo{
+  margin: 0 auto;
+  background-color: rgba(255, 228, 196, 0.49);
+  font-family: cursive;
+  width: 30vw;
+  border-style: outset;
+  border-width: 13px;
+}
+#logo{
+  width: 100%;
+  height: 100%;
+}
