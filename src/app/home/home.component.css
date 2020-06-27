@@ -62,8 +62,14 @@ h5{
     flex: 100%;
     max-width: 100%;
   }
+  h1{
+    font-size: 6vh;
+  }
+}
+@media screen and (min-width: 990px) {
+  h1{
+    font-size: 9vh;
+  }
 }
 
-h1{
-  font-size: 9vh;
-}
+

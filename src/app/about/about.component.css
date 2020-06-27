@@ -2,4 +2,37 @@
   .container{
     margin: 18vh 1vw;
 }
+
+}
+@media only screen and (max-width: 700px) {
+  .img-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Collage */
+@media only screen and (min-width: 700px) {
+  .img-column {
+    -ms-flex: 45%; /* IE10 */
+    flex: 45%;
+    max-width: 45%;
+    padding: 0 4px;
+  }
+}
+
+.img-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+
+.img-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
