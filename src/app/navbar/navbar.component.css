@@ -1,27 +1,27 @@
 .logo{
-  margin: 0 auto;
-  background-color: rgba(255, 228, 196, 0.49);
+  background-color: rgba(255, 255, 255, 0.49);
   font-family: cursive;
-  border-style: outset;
-  border-width: 13px;
 }
 #navMove{
   width: 100vw;
+  display: inline-flex;
 }
 
 @media only screen and (min-width: 990px) {
   .logo{
-    width: 18vw;
+    width: 20vw;
+    padding-right: 50px;
+
   }
   nav ul li{
     font-size: 3vh;
   }
 
   nav {
-    background-color: rgba(255, 228, 196, 0.771);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     box-shadow: 30px 15px rgba(0, 0, 0, 0.107);
-    height: 26vh;
+    height: 18vh;
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -32,13 +32,13 @@
   }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 991px) {
 
   nav ul li{
     font-size: 3.5vh;
   }
   #navMove{
-    background-color: rgba(255, 228, 196, 0.771);
+    background-color: rgba(255, 255, 255, 0.771);
     padding: 10px;
     box-shadow: 30px 15px rgba(0, 0, 0, 0.107);
     height: 60vh;
@@ -46,6 +46,7 @@
     z-index: 5;
     top: -60vh;
     height: 60vh;
+
   }
 
   #navMove.show {
@@ -58,7 +59,7 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 479px) {
 
   nav ul li{
     font-size: 5vh;
@@ -71,21 +72,20 @@
 
 
 .table{
-  display: table;   /* Allow the centering to work */
-  margin: 0 auto;
-  width: 70vw;
+  display: inline;   /* Allow the centering to work */
 }
 
 nav ul {
   list-style-type: none;
-  min-width: 100%;
+  max-width: 70%;
 }
 
 nav ul li{
   color: #000;
   display: inline;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  min-width: 27%;
+  min-width: 28%;
+  font-size: 220%;
 }
 
 #logo{
@@ -104,4 +104,16 @@ nav ul li{
 .navbar-toggler {
   border-color: rgb(0, 0, 0);
   border-width: 2px;
+}
+.navbar-collapse{
+
+list-style-type: none;
+padding:0;
+margin:0;
+display: inline-block;
+}
+
+ul#navbarSupportedContent li {
+  display:inline-block;
+  max-width: 3vw;
 }

@@ -1,10 +1,7 @@
-@media only screen and (max-width: 990px) {
-  .container{
-    margin: 18vh 1vw;
+.card{
+  background-color: aliceblue;
 }
-
-}
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
   .img-column {
     -ms-flex: 100%;
     flex: 100%;
@@ -12,7 +9,7 @@
   }
 }
 /* Collage */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 767px) {
   .img-column {
     -ms-flex: 45%; /* IE10 */
     flex: 45%;
