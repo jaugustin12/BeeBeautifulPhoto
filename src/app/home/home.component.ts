@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     if (window.screen.width <= 490) { // 768px portrait
-      console.log(this.mobile);
       this.mobile = true;
     }
   }
