@@ -15,6 +15,14 @@ html {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body::-webkit-scrollbar{
+  width: 0.5%;
+}
+body::-webkit-scrollbar-thumb{
+  background: rgba(115, 0, 255, 0.381);
+}
+
 .card-body{
   padding: 1vh;
 }
@@ -22,13 +30,17 @@ html {
   position: absolute;
   min-width: 98vw;
 }
-@media only screen and (max-width: 991px) {
+h1{
+  font-size: 6vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgba(115, 0, 255, 0.579);
 }
 
-@media only screen and (min-width: 991px) {
+
+@media only screen and (min-width: 767px) {
   .container{
     margin: 22vh 0vw;
-}
+  }
 }
 
 .self-portrait{
@@ -45,6 +57,3 @@ html {
   padding: 3rem 2rem;
   text-align: center;
 }
-
-html, body { }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

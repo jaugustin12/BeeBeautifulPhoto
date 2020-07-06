@@ -2,6 +2,24 @@
 <router-outlet></router-outlet>
 <nav class="navbar fixed-bottom navbar-light bg-light">
     <div class="col-12">
-        <button type="button" class="btn btn-dark float-right" [routerLink]="['/contact']" routerLinkActive="active">Contact Us</button>
+        <div id="navMove">
+
+            <ul class="navbar-nav navbar-collapse" id="navbarSupportedContent">
+              <li class="nav-item">
+                <a class="nav-link" class="icon home"[routerLink]="['/home']"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" class="icon about" [routerLink]="['/about']"></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" class="icon services" [routerLink]="['/services']"></a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" class="icon contact" [routerLink]="['/contact']"></a>
+              </li>
+            </ul>
+
+        </div>
+        <button type="button" class="btn btn-dark float-right contact-button" [routerLink]="['/contact']" routerLinkActive="active">Contact Us</button>
     </div>
   </nav>

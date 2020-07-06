@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  mobile;
 
   constructor() { }
 
   ngOnInit(): void {
+    if (window.screen.width <= 490) { // 768px portrait
+      console.log(this.mobile);
+      this.mobile = true;
+    }
   }
 
 }
+

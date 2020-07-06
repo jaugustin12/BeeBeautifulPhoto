@@ -1,114 +1,104 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-        <div class="jumbotron" style="padding: 0; margin-bottom: 0;">
-            <h1 class="display-5">Services</h1>
-        </div>
-      <div class="card" style="background-color: rgb(227, 234, 236); max-height: 85vh">
-        <div class="card-body" style="height: 85vh;">
-          <div class="row" style="margin-top: 20px; ">
-              <div *ngIf="collection === 'Explore Collections'" class="card col-7 float-left" style="height: 70vh;">
-                  <img class="d-block w-100" style="margin-top: 20px;" src="../../assets/bee's-photos/bbp-logo.small.jpeg" alt="Second slide">
-                </div>
+      <h1>Services</h1>
+                                        <!-- Default logo -->
+                  <div *ngIf="collection === 'Explore Collections'" class="img-row" style="width: 100vw; align-content: center;">
+                      <img class="" style="margin: 5px; width: 80%" src="../../assets/bee's-photos/bbp-logo.small.jpeg" alt="Second slide">
+                    </div>
 
-            <!-- Portrait Carousel -->
-            <div *ngIf="collection === 'Portraits'" class="card col-7 float-left">
-              <div class="card-body">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_1.JPG" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_2.JPG" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_3.JPG" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-80" src="../../assets/bee's-photos/portrait/PT_4.JPG" alt="Fourth slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_5.JPG" alt="Fifth slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_6.JPG" alt="Sixth slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img style="  display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;" src="../../assets/bee's-photos/portrait/PT_7.JPG" alt="Seventh slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_8.JPG" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_9.JPG" alt="Third slide">
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div *ngIf="collection === 'Boudoir'" class="card col-7 float-left">
-                <div class="card-body">
-                <!-- Boudoir Carousel -->
+                                            <!-- Portrait Carousel -->
 
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_1.JPG" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_2.JPG" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_3.JPG" alt="Third slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-80" src="../../assets/bee's-photos/boudoir/BD_4.JPG" alt="Fourth slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_5.JPG" alt="Fifth slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_6.JPG" alt="Sixth slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_7.JPG" alt="Seventh slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_8.JPG" alt="Eighth slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_9.JPG" alt="Ninth slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_10.JPG" alt="Tenth slide">
-                      </div>
+                    <div *ngIf="collection === 'Portraits'" class="img-row ">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item" [class.active]="currentIndex === 1">
+                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_1.JPG" alt="First slide">
+                            </div>
+                            <div class="carousel-item" [class.active]="currentIndex === 2">
+                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_2.JPG" alt="Second slide">
+                            </div>
+                            <div class="carousel-item" [class.active]="currentIndex === 3">
+                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_3.JPG" alt="Third slide">
+                            </div>
+                            <div class="carousel-item" [class.active]="currentIndex === 4">
+                              <img class="d-block w-80" src="../../assets/bee's-photos/portrait/PT_4.JPG" alt="Fourth slide">
+                            </div>
+                            <div class="carousel-item" [class.active]="currentIndex === 5">
+                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_5.JPG" alt="Fifth slide">
+                            </div>
+                            <div class="carousel-item" [class.active]="currentIndex === 6">
+                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_6.JPG" alt="Sixth slide">
+                            </div>
+                            <div class="carousel-item" [class.active]="currentIndex === 7">
+                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_7.JPG" alt="Seventh slide">
+                            </div>
+                            <div class="carousel-item" [class.active]="currentIndex === 8">
+                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_8.JPG" alt="Third slide">
+                            </div>
+                            <div class="carousel-item" [class.active]="currentIndex === 9">
+                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_9.JPG" alt="Third slide">
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            <div class="card col-4 float-right" style="max-height: 75vh;">
-              <div class="card-body">
-                  <div class="dropdown mx-auto" style="width: 200px; margin-top: 20px;">
+
+                                            <!-- Boudoir Carousel -->
+                    <div *ngIf="collection === 'Boudoir'" class="img-row ">
+
+                        <div #carousel id="carouselExampleControls" style="object-fit: cover;" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item" [class.active]="currentIndex === 1">
+                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_1.JPG" alt="First slide">
+                              </div>
+                              <div class="carousel-item" [class.active]="currentIndex === 2">
+                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_2.JPG" alt="Second slide">
+                              </div>
+                              <div class="carousel-item" [class.active]="currentIndex === 3">
+                                <img class="d-block w-100"  src="../../assets/bee's-photos/boudoir/BD_3.JPG" alt="Third slide">
+                              </div>
+                              <div class="carousel-item" [class.active]="currentIndex === 4">
+                                <img class="d-block w-80" src="../../assets/bee's-photos/boudoir/BD_4.JPG" alt="Fourth slide">
+                              </div>
+                              <div class="carousel-item" [class.active]="currentIndex === 5">
+                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_5.JPG" alt="Fifth slide">
+                              </div>
+                              <div class="carousel-item" [class.active]="currentIndex === 6">
+                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_6.JPG" alt="Sixth slide">
+                              </div>
+                              <div class="carousel-item" [class.active]="currentIndex === 7">
+                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_7.JPG" alt="Seventh slide">
+                              </div>
+                              <div class="carousel-item" [class.active]="currentIndex === 8">
+                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_8.JPG" alt="Eighth slide">
+                              </div>
+                              <div class="carousel-item" [class.active]="currentIndex === 9">
+                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_9.JPG" alt="Ninth slide">
+                              </div>
+                              <div class="carousel-item" [class.active]="currentIndex === 10">
+                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_10.JPG" alt="Tenth slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                      </div>
+
+                  <div class="dropdown" style="width: 200px; margin-top: 20px;">
                       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         {{collection}}
@@ -120,46 +110,40 @@
                     </div>
 
                     <!-- Portrait Collage  -->
-<div *ngIf="collection === 'Portraits'" class="img-row">
-    <div class="img-column">
-      <img src="../../assets/bee's-photos/portrait/PT_1.JPG">
-      <img src="../../assets/bee's-photos/portrait/PT_2.JPG">
-      <img src="../../assets/bee's-photos/portrait/PT_3.JPG">
-
-    </div>
-    <div class="img-column">
-      <img src="../../assets/bee's-photos/portrait/PT_7.JPG">
-      <img src="../../assets/bee's-photos/portrait/PT_6.JPG">
-
-    </div>
-    <div class="img-column">
-      <img src="../../assets/bee's-photos/portrait/PT_8.JPG">
-      <img src="../../assets/bee's-photos/portrait/PT_5.JPG">
-    </div>
+<div *ngIf="collection === 'Portraits'" class="img-row picsRow">
+    <div class="img-column pics">
+      <img class="gallery" src="../../assets/bee's-photos/portrait/PT_1.JPG" (click)="CarouselChange(1)">
+      <img class="gallery" src="../../assets/bee's-photos/portrait/PT_2.JPG" (click)="CarouselChange(2)">
+      <img class="gallery" src="../../assets/bee's-photos/portrait/PT_3.JPG" (click)="CarouselChange(3)">
+      <img class="gallery" src="../../assets/bee's-photos/portrait/PT_4.JPG" (click)="CarouselChange(4)">
+      <img class="gallery" src="../../assets/bee's-photos/portrait/PT_5.JPG" (click)="CarouselChange(5)">
+      <img class="gallery" src="../../assets/bee's-photos/portrait/PT_6.JPG" (click)="CarouselChange(6)">
+      <img class="gallery" src="../../assets/bee's-photos/portrait/PT_7.JPG" (click)="CarouselChange(7)">
+      <img class="gallery" src="../../assets/bee's-photos/portrait/PT_8.JPG" (click)="CarouselChange(8)">
+      <img class="gallery" src="../../assets/bee's-photos/portrait/PT_9.JPG" (click)="CarouselChange(9)">
+      </div>
   </div>
   <br>
 <!-- Boudoir Collage end -->
 
 <!-- Boudoir Collage  -->
-<div *ngIf="collection === 'Boudoir'"class="img-row">
-    <div class="img-column">
-      <img src="../../assets/bee's-photos/boudoir/BD_1.JPG">
-      <img src="../../assets/bee's-photos/boudoir/BD_2.JPG">
-      <img src="../../assets/bee's-photos/boudoir/BD_7.JPG">
-    </div>
-    <div class="img-column">
-        <img src="../../assets/bee's-photos/boudoir/BD_3.JPG">
-        <img src="../../assets/bee's-photos/boudoir/BD_6.JPG">
-
-    </div>
-    <div class="img-column">
-        <img src="../../assets/bee's-photos/boudoir/BD_4.JPG">
-        <img src="../../assets/bee's-photos/boudoir/BD_5.JPG">
-    </div>
+<div *ngIf="collection === 'Boudoir'"class="img-row picsRow">
+    <li class="img-column pics">
+      <img class="gallery" src="../../assets/bee's-photos/boudoir/BD_1.JPG" (click)="CarouselChange(1)">
+      <img class="gallery" src="../../assets/bee's-photos/boudoir/BD_2.JPG" (click)="CarouselChange(2)">
+      <img class="gallery" src="../../assets/bee's-photos/boudoir/BD_3.JPG" (click)="CarouselChange(3)">
+      <img class="gallery" src="../../assets/bee's-photos/boudoir/BD_4.JPG" (click)="CarouselChange(4)">
+      <img class="gallery" src="../../assets/bee's-photos/boudoir/BD_5.JPG" (click)="CarouselChange(5)">
+      <img class="gallery" src="../../assets/bee's-photos/boudoir/BD_6.JPG" (click)="CarouselChange(6)">
+      <img class="gallery" src="../../assets/bee's-photos/boudoir/BD_7.JPG" (click)="CarouselChange(7)">
+      <img class="gallery" src="../../assets/bee's-photos/boudoir/BD_8.JPG" (click)="CarouselChange(8)">
+      <img class="gallery" src="../../assets/bee's-photos/boudoir/BD_9.JPG" (click)="CarouselChange(9)">
+      <img class="gallery" src="../../assets/bee's-photos/boudoir/BD_10.JPG" (click)="CarouselChange(10)">
+    </li>
   </div>
 
 <!-- Boudoir Collage end -->
-<div class="dropdown mx-auto" style="width: 200px;">
+<div class="dropdown" style="width: 200px;">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
       aria-expanded="false">
       {{package}}
@@ -174,7 +158,6 @@
   <div class="row" >
       <!-- Package1 -->
       <div class="mx-auto" *ngIf="package == 'Package 1'">
-          <h1 class="display-5">Package 1</h1>
           <div class="card self-portrait">
             <div class="card-body">
               <p>
@@ -251,7 +234,6 @@
       </div>
 <!-- Package2 -->
       <div class="mx-auto" *ngIf="package == 'Package 2'">
-          <h1 class="display-5">Package 2</h1>
           <div class="card self-portrait">
             <div class="card-body">
               <p>
@@ -328,7 +310,6 @@
       </div>
       <!-- Package3 -->
       <div class="mx-auto" *ngIf="package== 'Package 3'">
-          <h1 class="display-5">Package 3</h1>
           <div class="card self-portrait">
             <div class="card-body">
               <p>
@@ -404,6 +385,7 @@
 
       </div>
     </div>
+    <br>
     <div class="row">
         <button style="width: 275px;" type="button " class="btn btn-dark mx-auto" [routerLink]="['/contact']" routerLinkActive="active">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -422,14 +404,9 @@
           </svg>
           Create Appointment</button>
     </div>
-
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </div>
   </div>
+
+
+  <script>
+  </script>

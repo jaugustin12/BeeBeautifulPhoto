@@ -1,17 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.css']
 })
-export class ServicesComponent implements OnInit {
+export class ServicesComponent implements OnInit, AfterViewInit {
 
   constructor() { }
   collection = 'Explore Collections';
   package = 'Explore Packages';
+  currentIndex = 1;
 
-  ngOnInit(): void {}
+
+  ngOnInit(): void {
+/*     $(document).click((event) => {
+      console.log('hi');
+      $('#carousel').carousel(1);
+    }); */
+  }
+  ngAfterViewInit() {
+  }
+
+  CarouselChange(index) {
+    this.currentIndex = index;
+}
 
   portraits()
   {
