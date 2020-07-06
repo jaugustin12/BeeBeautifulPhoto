@@ -5,6 +5,10 @@
   }
 }
 
+form{
+  padding-bottom: 20%;
+}
+
 mat-form-field{
   width: 30vw;
 }
@@ -20,7 +24,6 @@ input, mat-label, mat-select, textarea {
 }
 .jumbotron{
   background-color: rgb(255, 255, 255);
-  height: 60vh;
   padding-top: 10px;
 }
 

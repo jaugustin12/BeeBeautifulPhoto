@@ -22,6 +22,11 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
   background: rgba(115, 0, 255, 0.381);
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .card-body{
   padding: 1vh;
@@ -48,7 +53,6 @@ h1{
   padding: 2%;
 }
 .card{
-  max-height: 65vh;
   overflow-y: scroll;
 }
 

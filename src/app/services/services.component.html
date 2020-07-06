@@ -3,13 +3,13 @@
     <div class="col-12">
       <h1>Services</h1>
                                         <!-- Default logo -->
-                  <div *ngIf="collection === 'Explore Collections'" class="img-row" style="width: 100vw; align-content: center;">
-                      <img class="" style="margin: 5px; width: 80%" src="../../assets/bee's-photos/bbp-logo.small.jpeg" alt="Second slide">
+                  <div *ngIf="collection === 'Explore Collections'" class="img-row" style="width: 100vw;">
+                      <img class= "center" style="height: 20vh" src="../../assets/bee's-photos/bbp-logo.small.jpeg" alt="Second slide">
                     </div>
 
                                             <!-- Portrait Carousel -->
 
-                    <div *ngIf="collection === 'Portraits'" class="img-row ">
+                    <div *ngIf="collection === 'Portraits'" class="img-row">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                           <div class="carousel-inner">
                             <div class="carousel-item" [class.active]="currentIndex === 1">
@@ -386,7 +386,7 @@
       </div>
     </div>
     <br>
-    <div class="row">
+    <div class="row" style="padding-bottom: 20vh;">
         <button style="width: 275px;" type="button " class="btn btn-dark mx-auto" [routerLink]="['/contact']" routerLinkActive="active">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>Checkout Cart</title>

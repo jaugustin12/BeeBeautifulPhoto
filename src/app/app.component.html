@@ -1,8 +1,6 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
-<nav class="navbar fixed-bottom navbar-light bg-light">
-    <div class="col-12">
-        <div id="navMove">
+<nav class="navbar fixed-bottom navbar-light bg-light" id="navMove">
 
             <ul class="navbar-nav navbar-collapse" id="navbarSupportedContent">
               <li class="nav-item">
@@ -18,8 +16,5 @@
                   <a class="nav-link" class="icon contact" [routerLink]="['/contact']"></a>
               </li>
             </ul>
-
-        </div>
         <button type="button" class="btn btn-dark float-right contact-button" [routerLink]="['/contact']" routerLinkActive="active">Contact Us</button>
-    </div>
   </nav>
