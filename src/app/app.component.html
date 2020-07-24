@@ -1,20 +1,32 @@
+
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="over" opened=false>
+
+    <nav class="navbar">
+      <ul class="navbar-nav navbar-collapse" id="navbarSupportedContent">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']" routerLinkActive= "active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about']" routerLinkActive= "active">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/services']" routerLinkActive= "active">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact']" routerLinkActive= "active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </mat-drawer>
+      <button mat-raised-button color="primary" (click)="drawer.toggle(); toggleButton()" [style.marginLeft.vw]= "closed? 0: 55" id="toggleButton" #toggle>
+        <p class="menu"></p>
+      </button>
+</mat-drawer-container>
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
-<nav class="navbar fixed-bottom navbar-light bg-light" id="navMove">
 
-            <ul class="navbar-nav navbar-collapse" id="navbarSupportedContent">
-              <li class="nav-item">
-                <a class="nav-link" class="icon home"[routerLink]="['/home']"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" class="icon about" [routerLink]="['/about']"></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" class="icon services" [routerLink]="['/services']"></a>
-                </li>
-              <li class="nav-item">
-                  <a class="nav-link" class="icon contact" [routerLink]="['/contact']"></a>
-              </li>
-            </ul>
-        <button type="button" class="btn btn-dark float-right contact-button" [routerLink]="['/contact']" routerLinkActive="active">Contact Us</button>
-  </nav>
+<div class="fixed-bottom">
+  <button type="button" class="btn btn-dark float-right contact-button" [routerLink]="['/contact']" routerLinkActive="active">Contact Us</button>
+</div>

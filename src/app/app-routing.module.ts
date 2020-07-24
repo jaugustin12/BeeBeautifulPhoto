@@ -7,11 +7,11 @@ import {ContactComponent} from '../app/contact/contact.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'services', component: ServicesComponent},
   {path: 'contact', component: ContactComponent},
-  {path: '**', redirectTo: '', pathMatch: 'full'}
+  {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({

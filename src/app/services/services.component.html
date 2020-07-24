@@ -1,43 +1,37 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <h1>Services</h1>
-                                        <!-- Default logo -->
-                  <div *ngIf="collection === 'Explore Collections'" class="img-row" style="width: 100vw;">
-                      <img class= "center" style="height: 20vh" src="../../assets/bee's-photos/bbp-logo.small.jpeg" alt="Second slide">
-                    </div>
 
                                             <!-- Portrait Carousel -->
-
                     <div *ngIf="collection === 'Portraits'" class="img-row">
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 100vw;">
                           <div class="carousel-inner">
                             <div class="carousel-item" [class.active]="currentIndex === 1">
-                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_1.JPG" alt="First slide">
+                              <img class="d-block" src="../../assets/bee's-photos/portrait/PT_1.JPG" alt="First slide">
                             </div>
                             <div class="carousel-item" [class.active]="currentIndex === 2">
-                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_2.JPG" alt="Second slide">
+                              <img class="d-block " src="../../assets/bee's-photos/portrait/PT_2.JPG" alt="Second slide">
                             </div>
                             <div class="carousel-item" [class.active]="currentIndex === 3">
-                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_3.JPG" alt="Third slide">
+                              <img class="d-block" src="../../assets/bee's-photos/portrait/PT_3.JPG" alt="Third slide">
                             </div>
                             <div class="carousel-item" [class.active]="currentIndex === 4">
-                              <img class="d-block w-80" src="../../assets/bee's-photos/portrait/PT_4.JPG" alt="Fourth slide">
+                              <img class="d-block" style="width: 100%;" src="../../assets/bee's-photos/portrait/PT_4.JPG" alt="Fourth slide">
                             </div>
                             <div class="carousel-item" [class.active]="currentIndex === 5">
-                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_5.JPG" alt="Fifth slide">
+                              <img class="d-block" src="../../assets/bee's-photos/portrait/PT_5.JPG" alt="Fifth slide">
                             </div>
                             <div class="carousel-item" [class.active]="currentIndex === 6">
-                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_6.JPG" alt="Sixth slide">
+                              <img class="d-block" src="../../assets/bee's-photos/portrait/PT_6.JPG" alt="Sixth slide">
                             </div>
                             <div class="carousel-item" [class.active]="currentIndex === 7">
-                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_7.JPG" alt="Seventh slide">
+                              <img class="d-block" src="../../assets/bee's-photos/portrait/PT_7.JPG" alt="Seventh slide">
                             </div>
                             <div class="carousel-item" [class.active]="currentIndex === 8">
-                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_8.JPG" alt="Third slide">
+                              <img class="d-block" src="../../assets/bee's-photos/portrait/PT_8.JPG" alt="Third slide">
                             </div>
                             <div class="carousel-item" [class.active]="currentIndex === 9">
-                              <img class="d-block w-100" src="../../assets/bee's-photos/portrait/PT_9.JPG" alt="Third slide">
+                              <img class="d-block" src="../../assets/bee's-photos/portrait/PT_9.JPG" alt="Third slide">
                             </div>
                           </div>
                           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -57,34 +51,34 @@
                         <div #carousel id="carouselExampleControls" style="object-fit: cover;" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item" [class.active]="currentIndex === 1">
-                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_1.JPG" alt="First slide">
+                                <img class="d-block" src="../../assets/bee's-photos/boudoir/BD_1.JPG" alt="First slide">
                               </div>
                               <div class="carousel-item" [class.active]="currentIndex === 2">
-                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_2.JPG" alt="Second slide">
+                                <img class="d-block" src="../../assets/bee's-photos/boudoir/BD_2.JPG" alt="Second slide">
                               </div>
                               <div class="carousel-item" [class.active]="currentIndex === 3">
-                                <img class="d-block w-100"  src="../../assets/bee's-photos/boudoir/BD_3.JPG" alt="Third slide">
+                                <img class="d-block"  src="../../assets/bee's-photos/boudoir/BD_3.JPG" alt="Third slide">
                               </div>
                               <div class="carousel-item" [class.active]="currentIndex === 4">
-                                <img class="d-block w-80" src="../../assets/bee's-photos/boudoir/BD_4.JPG" alt="Fourth slide">
+                                <img class="d-block" src="../../assets/bee's-photos/boudoir/BD_4.JPG" alt="Fourth slide">
                               </div>
                               <div class="carousel-item" [class.active]="currentIndex === 5">
-                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_5.JPG" alt="Fifth slide">
+                                <img class="d-block" src="../../assets/bee's-photos/boudoir/BD_5.JPG" alt="Fifth slide">
                               </div>
                               <div class="carousel-item" [class.active]="currentIndex === 6">
-                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_6.JPG" alt="Sixth slide">
+                                <img class="d-block" src="../../assets/bee's-photos/boudoir/BD_6.JPG" alt="Sixth slide">
                               </div>
                               <div class="carousel-item" [class.active]="currentIndex === 7">
-                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_7.JPG" alt="Seventh slide">
+                                <img class="d-block" src="../../assets/bee's-photos/boudoir/BD_7.JPG" alt="Seventh slide">
                               </div>
                               <div class="carousel-item" [class.active]="currentIndex === 8">
-                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_8.JPG" alt="Eighth slide">
+                                <img class="d-block " src="../../assets/bee's-photos/boudoir/BD_8.JPG" alt="Eighth slide">
                               </div>
                               <div class="carousel-item" [class.active]="currentIndex === 9">
-                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_9.JPG" alt="Ninth slide">
+                                <img class="d-block" src="../../assets/bee's-photos/boudoir/BD_9.JPG" alt="Ninth slide">
                               </div>
                               <div class="carousel-item" [class.active]="currentIndex === 10">
-                                <img class="d-block w-100" src="../../assets/bee's-photos/boudoir/BD_10.JPG" alt="Tenth slide">
+                                <img class="d-block" src="../../assets/bee's-photos/boudoir/BD_10.JPG" alt="Tenth slide">
                               </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

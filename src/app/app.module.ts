@@ -15,6 +15,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { HttpClientModule } from '@angular/common/http';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     NavbarComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatProgressBarModule,
     HttpClientModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

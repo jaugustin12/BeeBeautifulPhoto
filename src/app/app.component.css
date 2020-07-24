@@ -1,83 +1,66 @@
 
-.fixed-bottom{
-  height: 60px;;
-}
-.icon{
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-size: cover;
-}
 
 @media only screen and (max-width: 767px) {
-  .bg-light{
-    background-color: rgba(58, 0, 89, 0.661) !important;
+  #toggleButton{
+    width: 4vw;
+    position: fixed;
+    z-index: 500;
+    top: 20vh;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
-  .contact-button{
-    display:none;
+  .mat-raised-button.mat-primary{
+    background-color: rgba(255, 255, 255, 0.853);
   }
 
+  .menu{
+    margin-top: 50%;
+    height: 4vh;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMenu%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23202020' stroke-miterlimit='10' stroke-width='2' d='M2 8h60v8H2zm0 20h60v8H2z' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23202020' stroke-miterlimit='10' stroke-width='2' d='M2 48h60v8H2z' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+  }
+
+mat-drawer{
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.661);
+}
+
+  nav{
+    width: 55vw;
+  }
 
   nav ul {
-    width: 100vw;
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
+    margin-top: 25vh;
   }
 
   nav ul li{
-    font-size: 2vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    min-width: 25%;
+    font-size: 5vh;
+    font-family: cursive;
     text-align: center;
   }
-
   nav ul li a{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
-  .home {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EHouse%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' d='M54 26.267l7.555 7.3a.25.25 0 0 1-.174.43H54V62H40V44H24v18H10V34H2.618a.25.25 0 0 1-.174-.43L32 5l13 12.567V12h9z' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
-  }
-  .home:hover,
-  .home:focus {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EHouse%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' d='M54 26.267l7.555 7.3a.25.25 0 0 1-.174.43H54V62H40V44H24v18H10V34H2.618a.25.25 0 0 1-.174-.43L32 5l13 12.567V12h9z' fill='none' stroke='%23f9ffb2' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
-  }
-  .about{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EInfo Help%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Ccircle data-name='layer2' cx='32' cy='32' r='30' fill='none' stroke='%23ffffff' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3Cpath data-name='layer1' fill='none' stroke='%23ffffff' stroke-miterlimit='10' stroke-width='3' d='M28 26h4v22m-4 .008h8' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Ccircle data-name='layer1' cx='31' cy='19' r='2' fill='none' stroke='%23ffffff' stroke-miterlimit='10' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3C/svg%3E");
+  .active {
+    color: rgb(252, 227, 99) !important;
   }
 
-  .about:hover,
-  .about:focus {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EInfo Help%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Ccircle data-name='layer2' cx='32' cy='32' r='30' fill='none' stroke='%23f9ffb2' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3Cpath data-name='layer1' fill='none' stroke='%23f9ffb2' stroke-miterlimit='10' stroke-width='3' d='M28 26h4v22m-4 .008h8' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Ccircle data-name='layer1' cx='31' cy='19' r='2' fill='none' stroke='%23f9ffb2' stroke-miterlimit='10' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3C/svg%3E");
-  }
-  .services{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECamera%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' d='M59 17H46.6L40 9H24l-6.6 8H5a3 3 0 0 0-3 3v30a3 3 0 0 0 3 3h54a3 3 0 0 0 3-3V20a3 3 0 0 0-3-3z' fill='none' stroke='%23ffffff' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Ccircle data-name='layer1' cx='32' cy='33' r='14' fill='none' stroke='%23ffffff' stroke-miterlimit='10' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3Ccircle data-name='layer1' cx='54' cy='25' r='1' fill='none' stroke='%23ffffff' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3Ccircle data-name='layer1' cx='32' cy='33' r='6' fill='none' stroke='%23ffffff' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3C/svg%3E");
-  }
-
-  .services:hover,
-  .services:focus {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ECamera%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' d='M59 17H46.6L40 9H24l-6.6 8H5a3 3 0 0 0-3 3v30a3 3 0 0 0 3 3h54a3 3 0 0 0 3-3V20a3 3 0 0 0-3-3z' fill='none' stroke='%23f9ffb2' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Ccircle data-name='layer1' cx='32' cy='33' r='14' fill='none' stroke='%23f9ffb2' stroke-miterlimit='10' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3Ccircle data-name='layer1' cx='54' cy='25' r='1' fill='none' stroke='%23f9ffb2' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3Ccircle data-name='layer1' cx='32' cy='33' r='6' fill='none' stroke='%23f9ffb2' stroke-miterlimit='10' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3C/svg%3E");
-  }
-  .contact{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMail%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23ffffff' stroke-miterlimit='10' stroke-width='3' d='M2 12l30 29 30-29M42 31.6L62 52M2 52l20-20.4' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23ffffff' stroke-miterlimit='10' stroke-width='3' d='M2 12h60v40H2z' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E");
-    }
-
-  .contact:hover,
-  .contact:focus {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EMail%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23f9ffb2' stroke-miterlimit='10' stroke-width='3' d='M2 12l30 29 30-29M42 31.6L62 52M2 52l20-20.4' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23f9ffb2' stroke-miterlimit='10' stroke-width='3' d='M2 12h60v40H2z' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E");
+  .contact-button{
+    display:none;
   }
 }
 
 @media only screen and (min-width: 767px) {
-  .bg-light{
-    background-color: rgba(106, 106, 106, 0) !important;
-  }
 
-  #navMove{
-    display: none;
-  }
   .contact-button{
     display: initial;
   }
-}
 
+  mat-drawer-container{
+    display: none;
+  }
+}

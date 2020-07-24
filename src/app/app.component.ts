@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'beeBeautiful-photography';
+  @ViewChild('toggle', {static: false}) toggle: ElementRef;
+  closed = true;
+
+  constructor(
+    private renderer: Renderer2) { }
+
+  toggleButton() {
+    this.closed = !this.closed;
+  }
 }

@@ -16,12 +16,6 @@ html {
 }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-body::-webkit-scrollbar{
-  width: 0.5%;
-}
-body::-webkit-scrollbar-thumb{
-  background: rgba(115, 0, 255, 0.381);
-}
 .center {
   display: block;
   margin-left: auto;
@@ -34,6 +28,7 @@ body::-webkit-scrollbar-thumb{
 .container{
   position: absolute;
   min-width: 98vw;
+  padding: 0;
 }
 h1{
   font-size: 6vh;
@@ -60,4 +55,10 @@ h1{
   opacity: 0.6;
   padding: 3rem 2rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .container{
+    margin: 9vh 0vw;
+  }
 }

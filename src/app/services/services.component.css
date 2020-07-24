@@ -1,7 +1,9 @@
 svg{
   width: 2.5vw;
 }
-
+.carousel{
+ width: 100vw;
+}
 
 /* Collage */
 
@@ -18,7 +20,7 @@ svg{
 .img-column img {
   vertical-align: middle;
   height: 100%;
-  z-index: 500;
+  z-index: 20;
   object-fit: cover;
 }
 
@@ -69,7 +71,7 @@ font-size: 4vw;
 }
 .carousel-item img{
   margin:auto;
-  object-fit: cover;
+  max-height: 65vh;
 }
 
 .gallery{

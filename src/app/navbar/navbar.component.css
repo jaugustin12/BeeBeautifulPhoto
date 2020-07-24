@@ -1,11 +1,10 @@
 
 @media only screen and (min-width: 767px) {
   .logo{
-    background-color: rgba(255, 255, 255, 0.49);
     font-family: cursive;
-
-    height: 100%;
-    padding-right: 50px;
+    width: 25vw;
+    margin-left: 5%;
+    margin-right: 7%;
   }
 
   nav ul {
@@ -17,10 +16,7 @@
   }
 
   nav ul li{
-    font-size: 4vh;
-    color: #000;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    min-width: 20%;
+    min-width: 11%;
     padding-top: 30px;
   }
 
@@ -30,16 +26,24 @@
     }
 
   nav {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.305);
     padding: 10px;
-    box-shadow: 30px 15px rgba(0, 0, 0, 0.107);
     height: 18vh;
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 30;
   }
 
 
+}
+a{
+  color: rgb(255, 255, 255) !important;
+  font-size: 5vh;
+  font-family: cursive;
+}
+
+.active {
+  color: rgb(254, 237, 148) !important;
 }
 
 @media only screen and (max-width: 767px) {
