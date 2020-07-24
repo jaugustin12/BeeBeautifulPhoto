@@ -67,4 +67,8 @@ mat-drawer{
   mat-drawer-container{
     display: none;
   }
+
+  #toggleButton{
+    display: none;
+  }
 }
