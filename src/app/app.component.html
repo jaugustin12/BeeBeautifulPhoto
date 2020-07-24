@@ -20,10 +20,10 @@
       </ul>
     </nav>
   </mat-drawer>
-      <button mat-raised-button color="primary" (click)="drawer.toggle(); toggleButton()" [style.marginLeft.vw]= "closed? 0: 55" id="toggleButton" #toggle>
-        <p class="menu"></p>
-      </button>
 </mat-drawer-container>
+<button mat-raised-button color="primary" (click)="drawer.toggle(); toggleButton()" [style.marginLeft.vw]= "closed? 0: 55" id="toggleButton" #toggle>
+  <p class="menu"></p>
+</button>
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 
